@@ -1,6 +1,5 @@
 import { RawPlugin } from './index';
 import { PluginOptions, ExtendedNamespace } from '../../types/plugins/raw';
-import * as NSHttpFunc from './namespaces/http';
 import * as NSRendererFunc from './namespaces/renderer';
 import * as NSSceneFunc from './namespaces/scene';
 import * as NSEventFunc from './namespaces/event';
@@ -51,9 +50,6 @@ export class LogicalPlugin extends RawPlugin {
   }
 };
 
-Object.keys(NSHttpFunc).forEach(n => {
-  (LogicalPlugin.prototype as unknown as ExtendedNamespace)[n] = (NSHttpFunc as ExtendedNamespace)[n];
-});
 Object.keys(NSRendererFunc).forEach(n => {
   (LogicalPlugin.prototype as unknown as ExtendedNamespace)[n] = (NSRendererFunc as ExtendedNamespace)[n];
 });

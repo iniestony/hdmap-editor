@@ -63,7 +63,8 @@ export default class PreProcessorPlugin extends LogicalPlugin {
     const scope = this as unknown as ExtendedNamespace;
 
     // scope.loadPCDPointCloudWithPath('/demo.pcd');
-
     scope.loadOctreePointCloud();
+
+    scope.loadHDMap(`rc1`)
   }
 };

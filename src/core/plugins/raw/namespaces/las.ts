@@ -28,24 +28,11 @@ import {
 } from '../../mouseInteractor/constant';
 import { PcdInfo } from "../../pcdLoader/type";
 
-export async function getProjectInfo(
-  this: ExtendedNamespace,
-  projectId: string,
-) {
-  return this.createHttpRequest({
-    method: 'get',
-    ns: `v1/project/${projectId}`,
-  });
-};
-
 export async function getLasPointCloudInfo(
   this: ExtendedNamespace,
   lasId: string,
 ) {
-  return this.createHttpRequest({
-    method: 'get',
-    ns: `v1/pointcloud/${lasId}`,
-  });
+  return Promise.resolve();
 };
 
 export function genLasColorGradient(this: ExtendedNamespace, vizOption: LASVizOption) {
@@ -116,11 +103,7 @@ export async function loadLasTilePoints(
     tileY: number;
   },
 ) {
-  const url = this.createGetUrl({
-    ns: `v1/pointcloud/${options.lasId}/tile/${options.level}/${options.tileX}/${options.tileY}`,
-  });
-
-  const response = await fetch(url);
+  const response = await fetch('');
 
   if (response.status >= 200 && response.status < 400) {
     const arrayBuffer = await response.arrayBuffer();

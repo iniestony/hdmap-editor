@@ -78,15 +78,11 @@ export async function loadHDMap(
   this: ExtendedNamespace,
   hdMapId: string,
 ) {
-  const resProject = await this.createHttpRequestWithBody({
-    method: 'get',
-    ns: `v1/hdmap/${hdMapId}`,
-  });
+  const response = await fetch(`hdmap_${hdMapId}.json`);
+  const hdmapData = await response.json();
 
-  if (resProject?.isSuccess) {
-    const projectData = resProject.data;
-
-    const roads = (projectData.roads || []).map((raw: unknown) => {
+  if (hdmapData) {
+    const roads = (hdmapData.roads || []).map((raw: unknown) => {
       return this.alignPersistRoadItemKeyInfo(raw as unknown as RoadItemKeyInfo) as RoadItemKeyInfo;
     });
 
@@ -94,7 +90,7 @@ export async function loadHDMap(
       this.persistLoadRoad(roadItemKeyInfo);
     });
 
-    const junctions = (projectData.junctions || []).map((raw: unknown) => {
+    const junctions = (hdmapData.junctions || []).map((raw: unknown) => {
       return this.alignPersistJunctionItemKeyInfo(raw as unknown as JunctionItemKeyInfo) as JunctionItemKeyInfo;
     });
 
