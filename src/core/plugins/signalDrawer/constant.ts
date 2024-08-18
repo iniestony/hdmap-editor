@@ -1,0 +1,1 @@
+export const ReceiveSignalPositionEvent = "signal_drawer_receive_signal_position";

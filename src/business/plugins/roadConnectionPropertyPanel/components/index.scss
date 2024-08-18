@@ -1,0 +1,179 @@
+.plugin-road-connection-property-panel-wrapper {
+  position: fixed;
+  top: 50px;
+  bottom: 42px;
+  right: 0;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 30px 20px;
+  overflow: auto;
+  z-index: 5;
+
+  .road-info {
+    .road-property {
+      label {
+        color: #fff;
+      }
+    }
+
+    .road-proerty-text-right {
+      text-align: right;
+      padding-right: 9px;
+
+    }
+
+    .road-proerty-nowrap {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .road-proerty-margin-bottom {
+      margin-bottom: 24px;
+    }
+
+
+    .road-property-title {
+      height: 20px;
+      line-height: 20px;
+      font-size: 20px;
+      color: rgba(255, 0, 0, 1);
+    }
+
+    .road-property-value {
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      color: #fff;
+      margin: 20px 0;
+    }
+
+    .road-property-list {
+      margin: 20px 0;
+
+      .road-property-list-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 1px solid #fff;
+        padding: 5px;
+        margin-bottom: 5px;
+
+        .road-property-list-item-col {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 14px;
+
+          &.sm {
+            font-size: 10px;
+          }
+        }
+
+        .wrap-word {
+          word-break: break-all;
+        }
+      }
+    }
+
+    .road-property-btn {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+
+      .action {
+        padding: 0 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+    }
+
+    .road-operation {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+      font-size: 14px;
+
+      .action {
+        padding: 0 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+    }
+  }
+}
+
+$canvasWidth: 960px;
+$canvasHeight: 240px;
+$widthOffset: 80px;
+$heightOffset: 60px;
+$horizontalAxisWidth: 60px;
+$verticalAxisHeight: 40px;
+
+.plugin-road-connection-property-panel-canvas-wrapper {
+  position: fixed;
+  bottom: 42px;
+  left: 0;
+  height: $canvasHeight + $heightOffset;
+  width: $canvasWidth + $widthOffset;
+  background: rgba(0, 0, 0, 1);
+  border: 1px solid #29f;
+  user-select: none;
+  z-index: 1;
+
+  .horizontal-axis {
+    position: absolute;
+    top: $heightOffset - $verticalAxisHeight;
+    left: 0;
+    height: $canvasHeight;
+    width: $horizontalAxisWidth;
+
+    .axis-item {
+      position: absolute;
+      width: 6px;
+      border-top: 1px solid #fff;
+      right: 0;
+
+      span {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .vertical-axis {
+    position: absolute;
+    bottom: 0;
+    left: $horizontalAxisWidth;
+    height: $verticalAxisHeight;
+    width: $canvasWidth;
+
+    .axis-item {
+      position: absolute;
+      height: 6px;
+      border-left: 1px solid #fff;
+      top: 0;
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+}

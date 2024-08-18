@@ -1,0 +1,18 @@
+export const ReceiveSegmentAlignCurrentLasPointEvent = "segment_align_drawer_receive_current_las_point";
+
+export const EnterEditingSegmentAlignItemListEvent = "segment_align_drawer_enter_editing_segment_Align_item_list";
+
+export const CurrentSegmentAlignMoseMoveLASPointCloud2DEvent = "segment_align_drawer_current_segment_align_mose_move_las_point_cloud_2d";
+
+export const StoreSegmentAlignPointEvent = "segment_align_drawer_store_segment_align_point";
+
+export const StoreSegmentAlignEvent = "segment_align_drawer_store_segment_align";
+
+export const RemoveSegmentAlignEvent = "segment_align_drawer_remove_segment_align";
+
+
+export const UpdateSegmentAlign2DEvent = "segment_align_drawer_update_segment_align_2d";
+
+export const InitSegmentAlignOctreeInfoEvent = "segment_align_drawer_init_segment_align_octree_info";
+
+export const UpdateSegmentAlignItemsAnd2DTipsEvent = "segment_align_drawer_update_segment_align_items_and_2d_tips";

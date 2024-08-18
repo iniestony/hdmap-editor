@@ -1,0 +1,1 @@
+export const PersistDirtyHDMapEvent = "persistence_adaptor_persist_dirty_hdmap";

@@ -1,0 +1,19 @@
+export const EnterEditingJunctionItemEvent = "junction_editor_enter_editing_junction_item";
+
+export const ExitEditingJunctionItemEvent = "junction_editor_exit_editing_junction_item";
+
+export const PickJunctionActionMeshEvent = "junction_editor_pick_junction_action_mesh";
+
+export const OperateJunctionActionMeshEvent = "junction_editor_operate_junction_action_mesh";
+
+export const UnpickJunctionActionMeshEvent = "junction_editor_unpick_junction_action_mesh";
+
+export const TriggerDecorateNewRoadPrevAndNextConnectionRoadVertexEvent = "junction_editor_trigger_decorate_new_road_prev_and_next_connection_road_vertex";
+
+export const PickNewRoadPrevAndNextConnectionRoadVertexEvent = "junction_editor_pick_new_road_prev_and_next_connection_road_vertex";
+
+export const CleanNewRoadPrevAndNextConnectionRoadVertexEvent = "junction_editor_clean_new_road_prev_and_next_connection_road_vertex";
+
+export const DeliverJunctionAddEdgePointEvent = "junction_editor_Deliver_junction_add_edge_point";
+
+export const DeliverJunctionRemoveEdgePointEvent = "junction_editor_Deliver_junction_remove_edge_point";

@@ -1,0 +1,13 @@
+export const AlterRoadDrawerConfigEvent = "road_drawer_alter_road_drawer_config";
+
+export const FetchRoadDrawerConfigEvent = "road_drawer_fetch_road_drawer_config";
+
+export const ReceiveTwoStraightLineRoadPointEvent = "road_drawer_receive_two_straight_line_road_point";
+
+export const ReceiveThreeCircleCurveRoadPointEvent = "road_drawer_receive_three_circle_curve_road_point";
+
+export const ReceiveQuadraticBezierCurveRoadPointEvent = "road_drawer_receive_quadratic_bezier_curve_road_point";
+
+export const ReceiveCubicBezierCurveRoadPointEvent = "road_drawer_receive_cubic_bezier_curve_road_point";
+
+export const ReceiveCatmullSerieRoadPointEvent = "road_drawer_receive_catmull_serie_road_point";

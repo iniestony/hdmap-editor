@@ -1,0 +1,117 @@
+.plugin-signal-property-panel-wrapper {
+  position: fixed;
+  top: 50px;
+  bottom: 42px;
+  right: 0;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 30px 20px;
+  overflow: auto;
+  z-index: 5;
+
+  .signal-info {
+    .signal-property {
+      label {
+        color: #fff;
+      }
+    }
+
+    .signal-property-text-right {
+      text-align: right;
+      padding-right: 9px;
+
+    }
+
+    .signal-property-nowrap {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .signal-property-margin-bottom {
+      margin-bottom: 24px;
+    }
+
+    .signal-property-title {
+      height: 20px;
+      line-height: 20px;
+      font-size: 20px;
+      color: rgba(255, 0, 0, 1);
+    }
+
+    .signal-property-value {
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      color: #fff;
+      margin: 20px 0;
+    }
+
+    .signal-property-pos-btn {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    .signal-property-sub-signal-type {
+      width: 200px;
+    }
+
+    .signal-property-list {
+      margin: 20px 0;
+
+      .signal-property-list-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 1px solid #fff;
+        padding: 5px;
+        margin-bottom: 5px;
+
+        .signal-property-list-item-col {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 14px;
+
+          &.sm {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .signal-property-btn {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+
+      .action {
+        padding: 0 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+    }
+
+    .signal-operation {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+      font-size: 14px;
+
+      .action {
+        padding: 0 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+    }
+  }
+}

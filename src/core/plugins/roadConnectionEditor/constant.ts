@@ -1,0 +1,19 @@
+export const EnterEditingRoadConnectionItemEvent = "road_connection_editor_enter_editing_road_connection_item";
+
+export const ExitEditingRoadConnectionItemEvent = "road_connection_editor_exit_editing_road_connection_item";
+
+export const PickConnectionActionMeshEvent = "road_connection_editor_pick_connection_action_mesh";
+
+export const OperateConnectionActionMeshEvent = "road_connection_editor_operate_connection_action_mesh";
+
+export const UnpickConnectionActionMeshEvent = "road_connection_editor_unpick_connection_action_mesh";
+
+export const TriggerDecorateNewLanePrevAndNextConnectionLaneVertexEvent = "road_connection_editor_trigger_decorate_new_lane_prev_and_next_connection_lane_vertex";
+
+export const PickNewLanePrevAndNextConnectionLaneVertexEvent = "road_connection_editor_pick_new_lane_prev_and_next_connection_lane_vertex";
+
+export const CleanNewLanePrevAndNextConnectionLaneVertexEvent = "road_connection_editor_clean_new_lane_prev_and_next_connection_lane_vertex";
+
+export const DeliverRoadConnectionInnerAddCatmullPointEvent = "road_connection_editor_deliver_road_connection_inner_add_catmull_point";
+
+export const DeliverRoadConnectionInnerRemoveCatmullPointEvent = "road_connection_editor_deliver_road_connection_inner_remove_catmull_point";

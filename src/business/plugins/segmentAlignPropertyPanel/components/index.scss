@@ -1,0 +1,63 @@
+.plugin-segment-align-property-panel-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+
+  pointer-events: none;
+
+  .label_segment-align-item {
+    border: 1px solid;
+    width: 105px;
+    border-radius: 5px;
+    // pointer-events: all;
+  }
+
+  .label {
+    border: 1px solid;
+    // padding: 5px 21px;
+    border-radius: 5px;
+    pointer-events: all;
+    transform: translate(-52px, -99px);
+  }
+
+  .label_icon {
+    position: absolute;
+    right: 3px;
+    top: 0;
+    pointer-events: all;
+    cursor: pointer;
+  }
+
+  .moseMove {
+    position: absolute;
+    bottom: 45px;
+    right: 0px;
+  }
+
+  .right_sidebar {
+    pointer-events: all;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    bottom: 42px;
+    width: 340px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    .sidebar_content{
+      margin-top: 10px;
+    }
+    .title {
+      text-align: center;
+    }
+  }
+
+  .right_sidebar::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+
+}

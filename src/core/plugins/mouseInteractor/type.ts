@@ -1,0 +1,30 @@
+export enum MouseInteractionMode {
+  Roam,
+  DrawTwoStraightLine,
+  DrawThreeCircleCurve,
+  DrawQuadraticBezierCurve,
+  DrawCubicBezierCurve,
+  DrawTwoStraightLineRoad,
+  DrawThreeCircleCurveRoad,
+  DrawQuadraticBezierCurveRoad,
+  DrawCubicBezierCurveRoad,
+  DrawCatmullSerieRoad,
+  EditRoad,
+  EditRoadLane,
+  DrawConnectionRoad,
+  EditConnectionRoad,
+  EditRoadConnectionLane,
+  DrawJunction,
+  EditJunction,
+  DrawPointAlign,
+  DrawSegmentAlign,
+  DrawTrafficLights,
+  EditTrafficLights,
+};
+
+export enum PickItemUpCategory {
+  Road,
+  Lane,
+  Junction,
+  Signal,
+};

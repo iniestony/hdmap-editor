@@ -1,0 +1,1 @@
+export const FetchConvertedApolloMapEvent = "fetch_converted_apollo_map";

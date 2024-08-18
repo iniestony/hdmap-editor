@@ -1,0 +1,61 @@
+.hdmap-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  #hdmap_canvas {
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+
+  #plugins_house {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #road_altitude_canvas {
+    position: fixed;
+    bottom: 82px;
+    left: 60px;
+    height: 240px;
+    width: 960px;
+    outline: none;
+    z-index: 3;
+    display: none;
+  }
+
+  #road_connection_altitude_canvas {
+    position: fixed;
+    bottom: 82px;
+    left: 60px;
+    height: 240px;
+    width: 960px;
+    outline: none;
+    z-index: 3;
+    display: none;
+  }
+
+  #road_lane_altitude_canvas {
+    position: fixed;
+    bottom: 82px;
+    left: 60px;
+    height: 240px;
+    width: 960px;
+    outline: none;
+    z-index: 3;
+    display: none;
+  }
+
+  #road_connection_lane_altitude_canvas {
+    position: fixed;
+    bottom: 82px;
+    left: 60px;
+    height: 240px;
+    width: 960px;
+    outline: none;
+    z-index: 3;
+    display: none;
+  }
+}

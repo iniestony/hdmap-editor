@@ -1,0 +1,127 @@
+.plugin-lane-property-panel-wrapper {
+  position: fixed;
+  top: 50px;
+  bottom: 42px;
+  right: 0;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 30px 20px;
+  overflow: auto;
+
+  .road-info {
+    label {
+      color: #fff;
+    }
+
+    .road-lane-operation {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+      font-size: 14px;
+
+      .action {
+        padding: 0 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+    }
+  }
+
+  .road-lane-property {
+    .lane-property-margin-bottom {
+      margin-bottom: 24px;
+    }
+
+    .lane-property-text-right {
+      text-align: right;
+      padding-right: 9px;
+    }
+
+    .lane-property-nowrap {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #fff;
+    }
+
+    .speed {
+      margin-bottom: 5px;
+    }
+    
+    .km {
+      color: #fff;
+      vertical-align: sub;
+    }
+  }
+}
+
+$canvasWidth: 960px;
+$canvasHeight: 240px;
+$widthOffset: 80px;
+$heightOffset: 60px;
+$horizontalAxisWidth: 60px;
+$verticalAxisHeight: 40px;
+
+.plugin-road-lane-property-panel-canvas-wrapper {
+  position: fixed;
+  bottom: 42px;
+  left: 0;
+  height: $canvasHeight + $heightOffset;
+  width: $canvasWidth + $widthOffset;
+  background: rgba(0, 0, 0, 1);
+  border: 1px solid #29f;
+  user-select: none;
+  z-index: 1;
+
+  .horizontal-axis {
+    position: absolute;
+    top: $heightOffset - $verticalAxisHeight;
+    left: 0;
+    height: $canvasHeight;
+    width: $horizontalAxisWidth;
+
+    .axis-item {
+      position: absolute;
+      width: 6px;
+      border-top: 1px solid #fff;
+      right: 0;
+
+      span {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .vertical-axis {
+    position: absolute;
+    bottom: 0;
+    left: $horizontalAxisWidth;
+    height: $verticalAxisHeight;
+    width: $canvasWidth;
+
+    .axis-item {
+      position: absolute;
+      height: 6px;
+      border-left: 1px solid #fff;
+      top: 0;
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+}

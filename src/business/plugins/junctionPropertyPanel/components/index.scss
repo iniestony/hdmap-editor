@@ -1,0 +1,105 @@
+.plugin-junction-property-panel-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 30px 20px;
+  overflow: auto;
+
+  .road-info {
+    .road-junction-property {
+      label {
+        color: #fff;
+      }
+    }
+
+    .junction-proerty-text-right {
+      text-align: right;
+      padding-right: 9px;
+    }
+
+    .junction-proerty-nowrap {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .junction-proerty-margin-bottom {
+      margin-bottom: 24px;
+    }
+
+    .road-property-title {
+      height: 20px;
+      line-height: 20px;
+      font-size: 20px;
+      color: rgba(255, 0, 0, 1);
+    }
+
+    .road-property-value {
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      color: #fff;
+      margin: 20px 0;
+    }
+
+    .road-property-list {
+      margin: 20px 0;
+
+      .road-property-list-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 1px solid #fff;
+        padding: 5px;
+        margin-bottom: 5px;
+
+        .road-property-list-item-col {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 14px;
+
+          &.sm {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .road-property-btn {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+
+      .action {
+        padding: 0 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+    }
+
+    .road-operation {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+      font-size: 14px;
+
+      .action {
+        padding: 0 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+    }
+  }
+}

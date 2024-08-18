@@ -1,0 +1,1 @@
+export const AlterCameraVisualAngleEvent = "camera_manager_alter_camera_visual_angle";

@@ -1,0 +1,15 @@
+export const ReceivePointAlignCurrentLasPointEvent = "point_align_drawer_receive_current_las_point";
+
+export const EnterEditingPointAlignItemListEvent = "point_align_drawer_enter_editing_point_align_item_list";
+
+export const CurrentPointAlignMoseMoveLASPointCloud2DEvent = "point_align_drawer_current_point_align_mose_move_las_point_cloud_2d";
+
+export const StorePointAlignEvent = "point_align_drawer_store_point_align";
+
+export const RemovePointAlignEvent = "point_align_drawer_remove_point_align";
+
+export const UpdatePointAlign2DEvent = "point_align_drawer_update_point_align_2d";
+
+export const InitPointAlignOctreeInfoEvent = "point_align_drawer_init_point_align_octree_info";
+
+export const UpdatePointAlignItemsAnd2DTipsEvent = "point_align_drawer_update_point_align_items_and_2d_tips";

@@ -1,0 +1,1 @@
+export const AlterInteractionModeEvent = "interaction_manager_alter_interaction_mode";

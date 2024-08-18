@@ -1,0 +1,87 @@
+// road
+export const InvokeCreateTwoStraightLineRoadEvent = "transaction_manager_create_two_straight_line_road";
+export const InvokeCreateThreeCircleCurveRoadEvent = "transaction_manager_create_three_circle_curve_road";
+export const InvokeCreateQuadraticBezierCurveRoadEvent = "transaction_manager_create_quadratic_bezier_curve_road";
+export const InvokeCreateCubicBezierCurveRoadEvent = "transaction_manager_create_cubic_bezier_curve_road";
+export const InvokeCreateCatmullSerieRoadEvent = "transaction_manager_create_catmull_serie_road";
+export const InvokeCreateConnectionRoadEvent = "transaction_manager_create_connection_road";
+
+export const InvokeRemoveTwoStraightLineRoadEvent = "transaction_manager_remove_two_straight_line_road";
+export const InvokeRemoveThreeCircleCurveRoadEvent = "transaction_manager_remove_three_circle_curve_road";
+export const InvokeRemoveQuadraticBezierCurveRoadEvent = "transaction_manager_remove_quadratic_bezier_curve_road";
+export const InvokeRemoveCubicBezierCurveRoadEvent = "transaction_manager_remove_cubic_bezier_curve_road";
+export const InvokeRemoveCatmullSerieRoadEvent = "transaction_manager_remove_catmull_serie_road";
+export const InvokeRemoveConnectionRoadEvent = "transaction_manager_remove_connection_road";
+
+export const InvokeReformatTwoStraightLineRoadEvent = "transaction_manager_reformat_two_straight_line_road";
+export const InvokeReformatThreeCircleCurveRoadEvent = "transaction_manager_reformat_three_circle_curve_road";
+export const InvokeReformatQuadraticBezierCurveRoadEvent = "transaction_manager_reformat_quadratic_bezier_curve_road";
+export const InvokeReformatCubicBezierCurveRoadEvent = "transaction_manager_reformat_cubic_bezier_curve_road";
+export const InvokeReformatCatmullSerieRoadEvent = "transaction_manager_reformat_catmull_serie_road";
+export const InvokeReformatConnectionRoadEvent = "transaction_manager_reformat_connection_road";
+
+export const InvokeLaneWidthEditTwoStraightLineRoadEvent = "transaction_manager_lane_width_edit_two_straight_line_road";
+export const InvokeLaneWidthEditThreeCircleCurveRoadEvent = "transaction_manager_lane_width_edit_three_circle_curve_road";
+export const InvokeLaneWidthEditQuadraticBezierCurveRoadEvent = "transaction_manager_lane_width_edit_quadratic_bezier_curve_road";
+export const InvokeLaneWidthEditCubicBezierCurveRoadEvent = "transaction_manager_lane_width_edit_cubic_bezier_curve_road";
+export const InvokeLaneWidthEditCatmullSerieRoadEvent = "transaction_manager_lane_width_edit_catmull_serie_road";
+
+export const InvokeAddLaneTwoStraightLineRoadEvent = "transaction_manager_add_lane_two_straight_line_road";
+export const InvokeAddLaneThreeCircleCurveRoadEvent = "transaction_manager_add_lane_three_circle_curve_road";
+export const InvokeAddLaneQuadraticBezierCurveRoadEvent = "transaction_manager_add_lane_quadratic_bezier_curve_road";
+export const InvokeAddLaneCubicBezierCurveRoadEvent = "transaction_manager_add_lane_cubic_bezier_curve_road";
+export const InvokeAddLaneCatmullSerieRoadEvent = "transaction_manager_add_lane_catmull_serie_road";
+export const InvokeAddLaneConnectionRoadEvent = "transaction_manager_add_lane_connection_road";
+
+export const InvokeRemoveLaneTwoStraightLineRoadEvent = "transaction_manager_remove_lane_two_straight_line_road";
+export const InvokeRemoveLaneThreeCircleCurveRoadEvent = "transaction_manager_remove_lane_three_circle_curve_road";
+export const InvokeRemoveLaneQuadraticBezierCurveRoadEvent = "transaction_manager_remove_lane_quadratic_bezier_curve_road";
+export const InvokeRemoveLaneCubicBezierCurveRoadEvent = "transaction_manager_remove_lane_cubic_bezier_curve_road";
+export const InvokeRemoveLaneCatmullSerieRoadEvent = "transaction_manager_remove_lane_catmull_serie_road";
+export const InvokeRemoveLaneConnectionRoadEvent = "transaction_manager_remove_lane_connection_road";
+
+export const InvokeCatmullEditTwoStraightLineRoadEvent = "transaction_manager_catmull_edit_two_straight_line_road";
+export const InvokeCatmullEditThreeCircleCurveRoadEvent = "transaction_manager_catmull_edit_three_circle_curve_road";
+export const InvokeCatmullEditQuadraticBezierCurveRoadEvent = "transaction_manager_catmull_edit_quadratic_bezier_curve_road";
+export const InvokeCatmullEditCubicBezierCurveRoadEvent = "transaction_manager_catmull_edit_cubic_bezier_curve_road";
+export const InvokeCatmullEditCatmullSerieRoadEvent = "transaction_manager_catmull_edit_catmull_serie_road";
+export const InvokeCatmullEditConnectionRoadEvent = "transaction_manager_catmull_edit_connection_road";
+
+export const InvokeCatmullAlterLaneCatmullSerieRoadEvent = "transaction_manager_catmull_alter_lane_catmull_serie_road";
+export const InvokeCatmullAlterLaneConnectionRoadEvent = "transaction_manager_catmull_alter_lane_connection_road";
+
+export const InvokeLanePrevNextEditConnectionRoadEvent = "transaction_manager_lane_prev_next_edit_connection_road";
+
+export const InvokeCatmullExtendCatmullSerieRoadEvent = "transaction_manager_catmull_extend_catmull_serie_road";
+
+// junction
+export const InvokeCreateJunctionEvent = "transaction_manager_create_junction";
+export const InvokeRemoveJunctionEvent = "transaction_manager_remove_junction";
+export const InvokeCatmullEditEdgeJunctionEvent = "transaction_manager_catmull_edit_edge_junction";
+
+// road property
+export const InvokeRoadTransparencyEditEvent = "transaction_manager_road_transparency_edit";
+export const InvokeRoadConnectionTransparencyEditEvent = "transaction_manager_road_connection_transparency_edit";
+
+export const InvokeRoadAttributeEditEvent = "transaction_manager_road_attribute_edit";
+export const InvokeRoadLaneAttributeEditEvent = "transaction_manager_road_lane_attribute_edit";
+export const InvokeRoadLaneLineInnerAttributeEditEvent = "transaction_manager_road_lane_inner_attribute_edit";
+export const InvokeRoadLaneLineOuterAttributeEditEvent = "transaction_manager_road_lane_outer_attribute_edit";
+
+export const InvokeRoadConnectionAttributeEditEvent = "transaction_manager_road_connection_attribute_edit";
+export const InvokeRoadConnectionLaneAttributeEditEvent = "transaction_manager_road_connection_lane_attribute_edit";
+export const InvokeRoadConnectionLaneInnerAttributeEditEvent = "transaction_manager_road_connection_lane_inner_attribute_edit";
+export const InvokeRoadConnectionLaneOuterAttributeEditEvent = "transaction_manager_road_connection_lane_outer_attribute_edit";
+
+// junction property
+export const InvokeJunctionAttributeEditEvent = "transaction_manager_junction_attribute_edit";
+
+// signal
+export const InvokeCreateSignalEvent = "transaction_manager_create_signal";
+export const InvokeRemoveSignalEvent = "transaction_manager_remove_signal";
+export const InvokeSignalAttributeEditEvent = "transaction_manager_signal_attribute_edit";
+export const InvokeReformatSignalEvent = "transaction_manager_reformat_signal";
+
+// validation
+export const InvokeRoadLaneLineSeriePointsOnlyPostInvalidEvent = "transaction_manager_invoke_road_lane_line_serie_points_only_post_invalid";
+export const InvokeRoadLaneLineSeriePointsPreAndPostInvalidEvent = "transaction_manager_invoke_road_lane_line_serie_points_pre_and_post_invalid";

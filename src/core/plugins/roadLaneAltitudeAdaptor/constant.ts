@@ -1,0 +1,5 @@
+export const EnterRoadLaneAltitudeAdaptorEvent = "road_lane_altitude_adaptor_enter_road_lane_altitude_adaptor";
+
+export const ExitRoadLaneAltitudeAdaptorEvent = "road_lane_altitude_adaptor_exit_road_lane_altitude_adaptor";
+
+export const UpdateRoadLaneAltitudeAxisEvent = "road_lane_altitude_adaptor_update_road_lane_altitude_axis";

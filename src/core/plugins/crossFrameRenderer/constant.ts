@@ -1,0 +1,7 @@
+export const TriggerLoadPCSCrossFrameTaskEvent = "cross_frame_renderer_trigger_load_pcs_cross_frame_task";
+
+export const TriggerColorPCSCrossFrameTaskEvent = "cross_frame_renderer_trigger_color_pcs_cross_frame_task";
+
+export const PCSCrossFrameTaskStartEvent = "cross_frame_renderer_pcs_cross_frame_task_start";
+
+export const PCSCrossFrameTaskEndEvent = "cross_frame_renderer_pcs_cross_frame_task_end";

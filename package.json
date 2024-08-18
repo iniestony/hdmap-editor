@@ -1,0 +1,41 @@
+{
+  "name": "hdmap-editor",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babylonjs/core": "5.17.1",
+    "@babylonjs/gui": "5.18.0",
+    "@js-sdsl/priority-queue": "4.3.0",
+    "antd": "5.0.4",
+    "axios": "1.2.0",
+    "bson-objectid": "2.0.4",
+    "earcut": "2.2.4",
+    "google-protobuf": "3.21.2",
+    "javascript-color-gradient": "2.4.4",
+    "qs": "6.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/earcut": "^2.1.1",
+    "@types/google-protobuf": "^3.15.6",
+    "@types/javascript-color-gradient": "^2.4.0",
+    "@types/node": "^18.11.15",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^2.0.0",
+    "sass": "^1.54.5",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  }
+}
