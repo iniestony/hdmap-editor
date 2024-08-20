@@ -387,6 +387,21 @@ function ControlPanel(props: RenderedFuncCompProps) {
       </Space>
     );
 
+    const loadDemoHDMap = (
+      <Space>
+        <Tooltip title="加载示例HDMap" placement="bottom" color="blue">
+          <Button
+            shape="circle"
+            icon={<DownloadOutlined />}
+            onClick={() => {
+              const pScope = props.pScope as unknown as ExtendedNamespace;
+              pScope.loadHDMap(`demo`);
+            }}
+          ></Button>
+        </Tooltip>
+      </Space>
+    );
+
     const undoRedo = (
       <Space>
         <Tooltip title="Undo" placement="bottom" color="blue">
@@ -619,6 +634,7 @@ function ControlPanel(props: RenderedFuncCompProps) {
         <>
           {save}
           {/* {output} */}
+          {loadDemoHDMap}
           {undoRedo}
           <Space>
             <Button
