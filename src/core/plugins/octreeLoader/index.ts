@@ -264,6 +264,8 @@ export default class OctreePointCloudLoaderPlugin extends LogicalPlugin {
       } else {
         this.octreePointCloud?.allHide();
       }
+
+      scope.makeSceneDirty();
     });
 
     // point/segment align

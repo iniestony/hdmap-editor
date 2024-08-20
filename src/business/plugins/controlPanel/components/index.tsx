@@ -634,7 +634,7 @@ function ControlPanel(props: RenderedFuncCompProps) {
         <>
           {save}
           {/* {output} */}
-          {loadDemoHDMap}
+          {/* {loadDemoHDMap} */}
           {undoRedo}
           <Space>
             <Button
@@ -710,11 +710,11 @@ function ControlPanel(props: RenderedFuncCompProps) {
                 alterInteractionMode(InteractionMode.DrawSegmentAlign);
               }}
             >
-              线段测量
+              距离测量
             </Button>
           </Space>
 
-          <Space>
+          {/* <Space>
             <Button
               shape="round"
               type={
@@ -728,7 +728,7 @@ function ControlPanel(props: RenderedFuncCompProps) {
             >
               绘制红绿灯
             </Button>
-          </Space>
+          </Space> */}
         </>
       )
     }
@@ -762,7 +762,7 @@ function ControlPanel(props: RenderedFuncCompProps) {
               <Radio.Button value={PickItemUpCategory.Road}>道路</Radio.Button>
               <Radio.Button value={PickItemUpCategory.Lane}>车道</Radio.Button>
               <Radio.Button value={PickItemUpCategory.Junction}>路口</Radio.Button>
-              <Radio.Button value={PickItemUpCategory.Signal}>红绿灯</Radio.Button>
+              {/* <Radio.Button value={PickItemUpCategory.Signal}>红绿灯</Radio.Button> */}
             </Radio.Group>
           </Space>
           <Space>

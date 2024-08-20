@@ -100,7 +100,7 @@ function PointAlignPropertyPanel(props: RenderedFuncCompProps) {
               <div className="label_icon" onClick={() => removePointAlign(pointAlignItemkeyInfo.pointAlignId)}>
                 <CloseCircleFilled />
               </div>
-              <div className="title">&nbsp; point {pointAlignItemkeyInfo.pointAlignId.replace('pointsAlign_Mesh_', '')}</div>
+              <div className="title">&nbsp; {pointAlignItemkeyInfo.pointAlignId}</div>
             </div>
           )
         })

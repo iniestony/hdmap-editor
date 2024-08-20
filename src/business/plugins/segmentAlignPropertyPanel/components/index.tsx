@@ -126,7 +126,7 @@ function SegmentAlignPropertyPanel(props: RenderedFuncCompProps) {
                 <div className="label_icon" onClick={() => removeSegmentAlign(segmentAlignItemKeyInfo.segmentAlignId)}>
                   <CloseCircleFilled />
                 </div>
-                <div className="title">&nbsp; distance {segmentAlignItemKeyInfo.segmentAlignId.replace('segmentAlign_Mesh_', '')}</div>
+                <div className="title">&nbsp; {segmentAlignItemKeyInfo.segmentAlignId}</div>
               </div>
             </div>
           )
@@ -215,13 +215,13 @@ function SegmentAlignPropertyPanel(props: RenderedFuncCompProps) {
                     <Row style={{ textAlign: 'center' }}>
 
                       <Col span={8}>
-                        XY: {segmentAlignItemKeyInfo?.lasPlaneDistance}
+                        Plane: {segmentAlignItemKeyInfo?.lasPlaneDistance}
                       </Col>
                       <Col span={8}>
-                        Z: {segmentAlignItemKeyInfo?.lasAltitudeDistance}
+                        Altitude: {segmentAlignItemKeyInfo?.lasAltitudeDistance}
                       </Col>
                       <Col span={8}>
-                        XYZ: {segmentAlignItemKeyInfo?.lasSpaceDistance}
+                        Space: {segmentAlignItemKeyInfo?.lasSpaceDistance}
                       </Col>
                     </Row>
                   </div>

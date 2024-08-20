@@ -198,7 +198,7 @@ export default class SegmentAlignDrawerPlugin extends LogicalPlugin {
 
   createSegmentAlignStart(segmentAlignPointItem: SegmentAlignPointItem) {
     const scope = this as unknown as ExtendedNamespace;
-    const segmentAlignId = `segmentAlign_Mesh_${this.actionSegmentAlignMeshIndex}`;
+    const segmentAlignId = `Distance_${this.actionSegmentAlignMeshIndex}`;
     const opt = {
       segmentAlignId: segmentAlignId,
       segmentAlignPoints: [segmentAlignPointItem],

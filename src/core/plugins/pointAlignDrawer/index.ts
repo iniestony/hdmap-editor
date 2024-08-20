@@ -169,7 +169,7 @@ export default class PointAlignDrawerPlugin extends LogicalPlugin {
   ) {
 
     const scope = this as unknown as ExtendedNamespace;
-    const pointAlignId = `pointsAlign_Mesh_${this.actionMeshIndex}`;
+    const pointAlignId = `Point_${this.actionMeshIndex}`;
     const mesh = scope.createMarker(point, RendererConfig.pointAlign.pointMesh.color, pointAlignId);
     const opt = {
       pointAlignId: pointAlignId,
