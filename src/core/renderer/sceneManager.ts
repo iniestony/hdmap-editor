@@ -31,7 +31,7 @@ export class SceneManager implements ISceneManager {
   constructor(options: { canvas: string, eventManager: EventManager }) {
     this.eventManager = options.eventManager;
 
-    this.contextCanvas = document.querySelector<HTMLCanvasElement>(`#${options.canvas}`) as HTMLCanvasElement;
+    this.contextCanvas = document.querySelector<any>(`#${options.canvas}`) as HTMLCanvasElement;
     
     this.contextEngine = new Engine(this.contextCanvas, true, {
       preserveDrawingBuffer: true,
